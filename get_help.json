@@ -1,0 +1,15 @@
+{
+  "name": "get_help",
+  "description": "Routes unsolved problems to an external diagnostic agent (OpenAI o3) for clarification.",
+  "url": "http://127.0.0.1:9001/get_help",
+  "method": "POST",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "question": { "type": "string" },
+      "summary": { "type": "string" },
+      "relevant_code": { "type": "string" }
+    },
+    "required": ["question", "summary"]
+  }
+}
