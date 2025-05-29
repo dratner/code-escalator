@@ -174,7 +174,7 @@ func (t *GetHelpTool) askOpenAI(ctx context.Context, prompt string) (string, err
 
 	model := t.modelName
 	if model == "" {
-		model = "gpt-4o" // default
+		model = "o3" // default
 	}
 
 	for attempt := range maxRetries {

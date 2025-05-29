@@ -224,7 +224,7 @@ func main() {
 
 	summaryFlag := flag.String("summary", "", "Path to project summary file (default: ./README.md)")
 	portFlag := flag.Int("port", 9001, "Port to listen on")
-	modelFlag := flag.String("model", "gpt-4o", "OpenAI model to use")
+	modelFlag := flag.String("model", "o3", "OpenAI model to use")
 	sseFlag := flag.Bool("sse", false, "Run as HTTP server instead of stdio mode")
 
 	flag.Usage = func() {
